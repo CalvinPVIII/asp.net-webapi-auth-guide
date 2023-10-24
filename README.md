@@ -450,7 +450,7 @@ Going back to the last part of our action here, we take our newly created list o
 
 Now, our `AccountsController` is ready to go. There are some more things we could do here, like add more claims, adjust the expiration time of our token, and add some model validation to make our errors more robust, but we will not worry about that right now.
 
-In order to confirm that our authorization works, let's authorize the `WeatherForecastController`, so only signed in users can access it. To do that, it's pretty simply, above the definition of the controller, we can add the `[Authorize]` attribute, like this:
+In order to confirm that our authorization works, let's authorize the `WeatherForecastController`, so only signed in users can access it. To do that, it's pretty simple, above the definition of the controller, we can add the `[Authorize]` attribute, like this:
 
 ```c#
 using Microsoft.AspNetCore.Authorization;
@@ -466,7 +466,7 @@ public class WeatherForecastController : ControllerBase
     // rest of controller here
 ```
 
-Now that we have a controller protected with authorization, let's test everything account, and go through the process of making an account and signing in.
+Now that we have a controller protected with authorization, let's test everything by going through the process of making an account and signing in.
 
 ### Testing the app
 
